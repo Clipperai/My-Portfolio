@@ -1,0 +1,798 @@
+/* Scrollbar */
+
+::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: #111;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: linear-gradient( rgb(36, 101, 159));
+
+    border-radius: 5px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: linear-gradient(red, rgb(24, 24, 140), cyan);
+
+}
+
+/* body */
+
+body {
+
+    color: white;
+    background: linear-gradient(to right, black, rgb(209, 42, 209), cadetblue, black) ;
+
+    animation-name: body-pulse;
+    animation-duration: 5s;
+
+}
+
+
+
+@keyframes body-pulse {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+        
+    }
+}
+
+/* ----- Navbar ----- */
+
+nav {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background: linear-gradient(to left, rgb(1, 51, 53), rgb(153, 149, 149) );
+
+}
+
+nav:hover {
+
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+
+}
+
+nav h1 {
+
+    background: linear-gradient(to right, rgb(133, 15, 95), pink);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 42px;
+
+}
+
+nav h3 {
+
+    margin-left: -562px;
+    margin-top: 45px;
+}
+
+.nav-links{
+
+    list-style: none;
+    
+    display: flex;
+
+}
+
+.nav-links button {
+
+    background: linear-gradient(to right, rgb(179, 40, 179), rgb(48, 203, 208));
+
+    margin: 5px;
+    padding: 5px;
+
+    border: 1px solid cyan;
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    cursor: pointer;
+
+}
+
+.nav-links button:hover {
+
+    background: radial-gradient(circle, rgb(179, 40, 179), rgb(48, 203, 208));
+    color: white;
+
+    border-radius: 10px;
+
+    transition: 0.5s ease;
+    transform: scale(1.1);
+
+
+}
+
+/* opportunity bubble */
+
+
+.mini-bubble {
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 6px 14px;
+    border-radius: 999px;
+
+    background: rgba(0,0,0,0.4);
+    color: rgb(255,255,255,0.7);
+
+    font-size: 14px;
+    font-family: sans-serif;
+
+    position: relative;
+
+}
+
+/* the small glowing bubble */
+.mini-bubble::before {
+
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    background: #00ff99;
+
+    box-shadow: 0 0 6px #00ff99;
+
+    animation: pulse 1.8s infinite ease-in-out;
+
+}
+
+@keyframes pulse {
+
+    0% {
+
+        transform: scale(0.4);
+        opacity: 0.4;
+        box-shadow: 0 0 4px #00ff99;
+
+    }
+
+    50% {
+
+        transform: scale(0.8);
+        opacity: 0.8;
+        box-shadow: 0 0 12px #00ff99, 0 0 20px #00ff99;
+
+    }
+
+    100% {
+
+        transform: scale(0.4);
+        opacity: 0.4;
+        box-shadow: 0 0 4px #00ff99;
+        
+    }
+}
+
+
+/* container */
+
+.container {
+
+    text-align: center;
+
+    margin: 100px;
+
+}
+
+.hero {
+
+    margin: 100px auto;
+
+    display: flex;
+
+}
+
+.hero img {
+    
+    width: 250px;
+
+    border: 2px solid rgb(232, 9, 191);
+    border-radius: 15px;
+
+    box-shadow: 0 2px 10px rgb(232, 9, 191);
+
+}
+
+
+
+.hero h2 {
+
+    font-family: Georgia;
+    font-size: 80px;
+
+    width: 100vh;
+
+    padding: 15px;
+
+    border-radius: 82px;
+
+}
+
+.hero h2 span {
+
+    background: linear-gradient(to right, rgb(25, 154, 29), rgb(5, 105, 176));
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero .hero-list {
+
+    display: flex;
+    gap: 30px;
+
+    color: rgb(200, 196, 196);
+
+    font-weight: bold;  
+    font-size: 18px;
+    
+}
+
+.hero p {
+
+    color: rgb(151, 149, 149);
+
+    font-weight: bold;
+
+}
+
+.hero .tagline {
+
+    color: cyan;
+
+    margin-left: -70%;
+
+    font-size: 14px;
+
+}
+
+.buttons {
+
+    justify-content: space-between;
+
+}
+
+.project-btn {
+
+    background: linear-gradient(to right, rgb(13, 93, 124), rgb(182, 63, 160));
+    color: white;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    margin-top: 50px;
+    margin-right: 10px;
+
+    padding: 10px;
+
+    border-radius: 12px;
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.project-btn:hover {
+
+    background: linear-gradient(to right, rgb(156, 15, 163), rgb(119, 212, 255), rgb(126, 20, 137));
+
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    margin-right: 10px;
+
+
+}
+
+.content-btn {
+
+    /* background-color: gray; */
+    background: linear-gradient(to right, rgb(46, 46, 133), cadetblue 50%);
+
+
+    color: white;
+    opacity: 0.9;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    /* margin-left: -70%; */
+    margin-top: 50px;
+    padding: 10px;
+    margin-right: 10px;
+
+    /* margin: 10px; */
+
+    border-radius: 12px;
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.content-btn:hover {
+
+    color: white;
+    background: linear-gradient(to left, rgb(149, 43, 43), rgb(88, 179, 183) 50%);
+
+    transition: 0.5s ease;
+    transform: scale(1.1);
+
+    margin-right: 10px;
+
+      
+}
+
+.content-btn .yt {
+
+    color: red;
+
+}
+
+.contact-btn {
+
+    background: linear-gradient(to left, rgb(88, 88, 187), rgb(66, 129, 131));
+    color: rgb(177, 174, 174);
+
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-top: 50px;
+    margin-right: 10px;
+
+    padding: 10px;
+
+    border-radius: 12px;
+    border-top: red;
+
+    cursor: pointer;
+
+}
+
+.contact-btn:hover {
+
+    color: white;
+    background: linear-gradient(to right, rgb(88, 88, 187), rgb(130, 55, 130), cadetblue);
+
+
+    transition: 0.5s ease;
+    transform: scale(1.1);
+
+    margin-right: 10px;
+
+
+}
+
+/* ------------- Socials ------------ */
+
+.github {
+
+    cursor: pointer;
+
+    border: 1px solid black;
+    border-radius: 8px;
+
+    margin: 10px;
+    padding: 5px;
+
+    color: white;
+
+    font-size: 18px;
+
+
+}
+
+
+.github:hover {
+
+    color: rgba(0, 0, 0, 0.734);
+
+    border: 1px solid rgb(0,0,0,0.734);
+
+    transform: scale(1.8);
+    transition: 0.5s ease;
+    
+}
+
+.youtube {
+
+    cursor: pointer;
+
+    border: 1px solid black;
+    border-radius: 8px;
+
+    margin: 10px;
+    padding: 5px;
+
+    color: white;
+
+    font-size: 18px;
+
+
+}
+
+
+.youtube:hover {
+
+    color: red;
+
+    border: 1px solid red;
+
+    transform: scale(1.8);
+    transition: 0.5s ease;
+    
+}
+
+.linkedin {
+
+    cursor: pointer;
+
+    border: 1px solid black;
+    border-radius: 8px;
+
+    margin: 10px;
+    padding: 5px;
+
+    color: white;
+
+    font-size: 18px;
+
+}
+
+
+.linkedin:hover {
+
+    color: rgb(39, 87, 159);
+
+    border: 1px solid rgb(39, 87, 159);
+
+    transform: scale(1.8);
+    transition: 0.5s ease;
+    
+}
+
+.instagram {
+
+    cursor: pointer;
+
+    border: 1px solid black;
+    border-radius: 8px;
+
+    margin: 10px;
+    padding: 5px;
+
+    color: white;
+
+    font-size: 18px;
+
+
+}
+
+
+.instagram:hover {
+
+    color: rgb(191, 8, 151);
+
+    border: 1px solid rgb(191, 8, 151);
+
+    transform: scale(1.8);
+    transition: 0.5s ease;
+    
+}
+
+
+
+/* ------------- Overview ------------ */
+
+.overview {
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+.overview h2 {
+
+    background: linear-gradient(to right, rgba(1, 17, 4, 0.859), rgb(255, 255, 255));
+
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: bold;
+
+}
+
+
+.whatIdo {
+
+    text-align: center;
+
+    margin-top: 100px;
+
+}
+
+
+.whatIdo .boxes {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    cursor: default;
+
+}
+
+
+.boxes p {
+
+    color: rgb(220, 221, 222);
+
+}
+
+.boxes .fd {
+
+    border: 2px solid rgb(203, 58, 203);
+    border-radius: 12px;
+
+    padding: 25px;
+    margin: 10px;
+
+    width: 80vh;
+
+    background: linear-gradient(to right, rgb(148, 67, 148), rgb(62, 2, 70));
+
+}
+
+.fd .code {
+
+    border: 2px solid none;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    background-color: rgb(118, 112, 112, 0.4);
+
+    color: rgb(228, 26, 228);
+
+}
+
+.fd:hover {
+
+    transform: translateY(-5px);
+    transition: 0.2s ease;
+
+    box-shadow: 0 4px 10px;
+
+}
+
+.boxes .aiML {
+
+    border: 2px solid rgb(4, 170, 170);
+    border-radius: 12px;
+
+    padding: 25px;
+    margin: 10px;
+
+    width: 80vh;
+
+    background: linear-gradient(to right, rgb(4, 60, 60), rgb(1, 21, 21));
+
+}
+
+
+.aiML .brain {
+
+    border: 2px solid none;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    background-color: rgb(118, 112, 112, 0.4);
+
+    color: rgb(228, 26, 228);
+
+}
+
+
+.aiML:hover {
+
+    transform: translateY(-5px);
+    transition: 0.2s ease;
+
+    box-shadow: 0 4px 10px;
+
+}
+
+.boxes .cc {
+
+    border: 2px solid rgb(158, 72, 72);
+    border-radius: 12px;
+
+    padding: 25px;
+    margin: 10px;
+
+    width: 80vh;
+
+    background: linear-gradient(to right, rgb(158, 72, 72), rgb(49, 1, 38));
+
+
+}
+
+
+.cc .video {
+
+    border: 2px solid none;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    background-color: rgb(118, 112, 112, 0.4);
+
+    color: rgb(228, 26, 228);
+}
+
+
+.cc:hover {
+
+    transform: scale(1.1) rotate(5deg) translateY(-5px);   
+    transition: 0.2s ease;
+
+    box-shadow: 0 4px 10px;
+
+    background: radial-gradient(circle, rgb(158, 72, 72), rgb(49, 1, 38));
+
+    color: cyan;
+
+}
+
+
+.boxes .dps {
+
+    border: 2px solid rgb(223, 135, 11);
+    border-radius: 12px;
+
+    padding: 25px;
+    margin: 10px;
+
+    width: 80vh;
+
+    background: linear-gradient(to right, rgb(161, 95, 2), rgb(125, 74, 4));
+
+
+}
+
+
+.dps .bolt {
+
+    border: 2px solid none;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    background-color: rgb(118, 112, 112, 0.4);
+
+    color: rgb(228, 26, 228);
+}
+
+
+
+.dps:hover {
+
+    transform: translateY(-5px);
+    transition: 0.2s ease;
+
+    box-shadow: 0 4px 10px;
+}
+
+.whatIdo .more {
+
+    color: cyan;
+
+    cursor: pointer;
+
+}
+
+
+.more:hover {
+
+    padding: 5px;
+
+    transform: translateY(-8px) ;
+}
+
+
+.getInTouch {
+
+    text-align: center;
+
+    margin: 100px auto;
+
+    border: 2px solid none;
+    border-radius: 12px;
+
+    background: linear-gradient(to right, rgb(219, 103, 225), rgb(0, 57, 57));
+
+    padding: 30px;
+
+    width: 800px;
+    height: 200px;
+
+}
+
+.getInTouch h2 {
+
+    border-top: 3.5px solid transparent;
+
+    border-image: linear-gradient(to right, rgb(77, 5, 77), rgb(9, 179, 185)) 1;
+
+}
+
+.getInTouch p {
+
+    color: rgb(255,255,255,0.8);
+}
+
+.getInTouch button {
+
+    border-radius: 15px;
+
+    background: linear-gradient(to right, purple, rgb(9, 179, 185));
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    padding: 15px;
+
+    cursor: pointer;
+
+}
+
+.getInTouch button:hover {
+
+    transform: translate(-5px, 2px) scale(1.1);
+    transition: 0.3s ease;
+}
