@@ -1,0 +1,393 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient( rgb(36, 101, 159));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(red, rgb(24, 24, 140), cyan);
+}
+
+
+body {
+
+    color: white;
+    background: linear-gradient(to right, black, rgb(209, 42, 209), cadetblue, black) ;
+
+}
+
+/* ----- Navbar ----- */
+
+nav {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background: linear-gradient(to left, rgb(1, 51, 53), rgb(153, 149, 149) );
+
+}
+
+nav:hover {
+
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+
+}
+
+nav h1 {
+
+    background: linear-gradient(to right, rgb(133, 15, 95), pink);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 42px;
+
+}
+
+nav h3 {
+
+    margin-left: -562px;
+    margin-top: 45px;
+}
+
+.nav-links{
+
+    list-style: none;
+    
+    display: flex;
+
+}
+
+.nav-links button {
+
+    background: linear-gradient(to right, rgb(179, 40, 179), rgb(48, 203, 208));
+
+    margin: 5px;
+    padding: 5px;
+
+    border: 1px solid cyan;
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    cursor: pointer;
+
+}
+
+.nav-links button:hover {
+
+    background: radial-gradient(circle, rgb(179, 40, 179), rgb(48, 203, 208));
+    color: white;
+
+    border-radius: 10px;
+
+    transition: 0.5s ease;
+    transform: scale(1.1);
+
+
+}
+
+/* container */
+
+
+.container {
+
+    margin: 100px;
+
+    justify-content: center;
+
+    top: 100px;
+
+    display: flex;
+    gap: 30px;
+
+}
+
+.container .profiles figcaption {
+
+    margin-top: -14px;
+
+    z-index: 1000;
+
+    border: 2px solid rgb(83, 83, 83);
+    border-radius: 15px;
+    
+    background-color: rgb(200,200,200,0.3);
+
+    padding: 5px;
+    
+}
+
+.container .profile-pic {
+
+    width: 200px;
+
+    border-radius: 15px;
+
+}
+
+
+.container h4 {
+
+    color: rgb(79, 236, 236);
+
+    font-size: 18px;
+
+}
+
+.container h2 {
+
+    font-size: 48px;
+    font-weight: bold;
+
+}
+
+.container ul {
+
+    
+    display: flex;
+    gap: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: rgb(255,255,255,0.8);
+
+}
+
+.container ul li {
+
+    margin: 10px;
+
+}
+
+.container pre {
+
+    color: rgb(255,255,255,0.6);
+
+    font-size: 16px;
+
+}
+
+
+
+
+/* currently */
+
+.current {
+
+    margin: 100px auto;
+
+    justify-content: space-around;
+
+    display: flex;
+
+}
+
+.current span ul {
+
+    list-style: none;
+
+}
+
+.current ul li {
+
+    color: rgb(255,255,255,0.6);
+
+    margin: 5px;
+
+}
+
+.current .current-work li:hover {
+
+    color: rgb(255,255,255);
+
+}
+
+.current .current-work li .check {
+
+    border: 2px solid none;
+    border-radius: 50%;
+
+    padding: 4px;
+
+    background: linear-gradient(to right, rgb(186, 104, 171), rgb(52, 107, 152));
+
+}
+
+/* current education */
+
+.edu .edu-box {
+
+    background-color: #2b2a2a;
+
+    border: 2px solid rgb(128, 126, 126);
+    border-radius: 12px;
+
+    padding: 15px;
+
+    width: 450px;
+
+}
+
+.edu-box .captions {
+
+    color: rgba(232, 231, 231, 0.8);
+
+    font-size: 15px;
+    
+}
+
+
+.edu-box .core-subjects {
+
+    list-style: none;
+
+    display: flex;
+
+    font-size: 14px;
+
+    padding: 2px;
+}
+
+.core-subjects li {
+
+    border: 2px solid rgb(200,200,180,0.5);
+    border-radius: 18px;
+
+    padding: 4px;
+
+    background-color: rgba(45, 45, 41, 0.6);
+
+}
+
+.core-subjects li:hover {
+
+    background-color: rgba(85, 85, 84, 0.6);
+
+}
+
+
+
+/* Achievements */
+
+.current-achievements .achievements-list li {
+
+    color: rgb(222, 227, 231);
+}
+
+.current-achievements  ul li .star-icon {
+
+    color: rgb(209, 130, 11);
+
+}
+
+/* skills */
+
+.skills {
+
+    text-align: center;
+
+}
+
+.skills-title {
+
+    margin: 50px auto;
+
+    font-size: 40px;
+    font-weight: bold;
+
+
+}
+
+.skills-category{
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+.skill-card {
+
+    background-color: #2b2a2ac4;  
+
+    border: 2px solid grey;
+    border-radius: 12px;
+
+    padding: 10px;
+
+    width: 300px;
+
+    transition: 0.3s ease;
+    
+}
+
+.skill-card:hover {
+
+    transform: translateY(-5px);    
+
+}
+
+
+.skills-category ul {
+
+    display: flex;
+    flex-direction: wrap;
+    gap: 10px;
+
+    padding: 0px;
+    margin: 0px;
+
+    font-size: 15px;
+
+}
+
+
+.skills-category li {
+
+    list-style: none;
+
+    border: 2px solid grey;
+    border-radius: 15px;
+
+    background: rgb(66, 31, 66);
+
+    padding: 8px;
+
+    transition: background-color 0.3s ease;
+
+
+}
+
+
+.frontend li:hover {
+
+    background: linear-gradient(to right, rgb(134, 77, 188), rgb(13, 119, 164));
+
+    transform: translateY(-2px);
+
+    border-color: rgb(103, 41, 161);
+
+}
+

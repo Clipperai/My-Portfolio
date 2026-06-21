@@ -1,0 +1,108 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient( rgb(36, 101, 159));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(red, rgb(24, 24, 140), cyan);
+}
+
+
+body {
+
+    color: white;
+    background: linear-gradient(to right, black, rgb(209, 42, 209), cadetblue, black) ;
+
+}
+
+/* ----- Navbar ----- */
+
+nav {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background: linear-gradient(to left, rgb(1, 51, 53), rgb(153, 149, 149) );
+
+}
+
+nav:hover {
+
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+
+}
+
+nav h1 {
+
+    background: linear-gradient(to right, rgb(133, 15, 95), pink);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 42px;
+
+}
+
+nav h3 {
+
+    margin-left: -562px;
+    margin-top: 45px;
+}
+
+.nav-links{
+
+    list-style: none;
+    
+    display: flex;
+
+}
+
+.nav-links button {
+
+    background: linear-gradient(to right, rgb(179, 40, 179), rgb(48, 203, 208));
+
+    margin: 5px;
+    padding: 5px;
+
+    border: 1px solid cyan;
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    cursor: pointer;
+
+}
+
+.nav-links button:hover {
+
+    background: radial-gradient(circle, rgb(179, 40, 179), rgb(48, 203, 208));
+    color: white;
+
+    border-radius: 10px;
+
+    transition: 0.5s ease;
+    transform: scale(1.1);
+
+
+}
+
