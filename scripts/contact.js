@@ -6,7 +6,7 @@ function content() {
 
 function home() {
 
-        window.location.href = "../portfolio.html";
+        window.location.href = "../index.html";
 
 }
 
