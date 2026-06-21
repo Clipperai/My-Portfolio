@@ -106,3 +106,43 @@ nav h3 {
 
 }
 
+
+/* coming soon */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0b0b0c; 
+  overflow: hidden;
+
+}
+
+.coming-soon {
+
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+
+  color: #ffffff;
+  letter-spacing: 2px;
+  
+  animation: professionalReveal 5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+}
+
+@keyframes professionalReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    filter: blur(8px); /* Mimics motion blur */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
