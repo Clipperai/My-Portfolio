@@ -532,17 +532,21 @@ nav h3 {
 
 }
 
+
 .overview h2 {
 
-    background: linear-gradient(to right, rgba(1, 17, 4, 0.859), rgb(255, 255, 255));
+    background: linear-gradient(to right, rgba(168, 138, 8, 0.859), rgb(121, 88, 3));
 
     -webkit-background-clip: text; 
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
     font-weight: bold;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
+
 
 
 .whatIdo {
