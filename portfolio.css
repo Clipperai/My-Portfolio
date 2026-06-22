@@ -31,7 +31,7 @@
 body {
 
     color: white;
-    background: linear-gradient(to right, black, cadetblue, black) ;
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.419));
 
     animation-name: body-pulse;
     animation-duration: 5s;
