@@ -22,7 +22,6 @@ body {
     color: white;
     background: linear-gradient(to right, black, rgba(0, 0, 0, 0.419));
 
-
 }
 
 /* ----- Navbar ----- */
@@ -216,6 +215,8 @@ nav h3 {
 
     margin: 5px;
 
+    font-size: 18px;
+
 }
 
 .current .current-work li:hover {
@@ -261,13 +262,11 @@ nav h3 {
 
 .edu-box .core-subjects {
 
-    list-style: none;
-
     display: flex;
-
-    font-size: 14px;
+    flex-wrap: wrap;
 
     padding: 2px;
+
 }
 
 .core-subjects li {
@@ -278,6 +277,7 @@ nav h3 {
     padding: 4px;
 
     background-color: rgba(45, 45, 41, 0.6);
+
 
 }
 
@@ -294,6 +294,8 @@ nav h3 {
 .current-achievements .achievements-list li {
 
     color: rgb(222, 227, 231);
+
+    font-size: 18px;
 }
 
 .current-achievements  ul li .star-icon {
@@ -301,6 +303,8 @@ nav h3 {
     color: rgb(209, 130, 11);
 
 }
+
+
 
 /* skills */
 
@@ -317,7 +321,6 @@ nav h3 {
     font-size: 40px;
     font-weight: bold;
 
-
 }
 
 .skills-category{
@@ -327,7 +330,10 @@ nav h3 {
 
     gap: 20px;
 
+    justify-content: center;
+
 }
+
 
 .skill-card {
 
@@ -338,7 +344,7 @@ nav h3 {
 
     padding: 10px;
 
-    width: 300px;
+    width: 250px;
 
     transition: 0.3s ease;
     
@@ -351,10 +357,10 @@ nav h3 {
 }
 
 
-.skills-category ul {
+.skill-card ul {
 
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
     gap: 10px;
 
     padding: 0px;
@@ -365,14 +371,12 @@ nav h3 {
 }
 
 
-.skills-category li {
+.skill-card li {
 
     list-style: none;
 
     border: 2px solid grey;
     border-radius: 15px;
-
-    background: rgb(66, 31, 66);
 
     padding: 8px;
 
@@ -381,8 +385,22 @@ nav h3 {
 
 }
 
+.frontend h3 {
 
-.frontend li:hover {
+    color:  rgba(169, 68, 247, 0.912);
+
+    font-weight: bold;
+
+}
+
+.frontend li {
+
+    background: rgba(105, 37, 157, 0.595);
+
+}
+
+
+.skill-card li:hover {
 
     background: linear-gradient(to right, rgb(134, 77, 188), rgb(13, 119, 164));
 
@@ -391,4 +409,55 @@ nav h3 {
     border-color: rgb(103, 41, 161);
 
 }
+
+
+.programming h3 {
+
+    color:  cyan;
+
+    font-weight: bold;
+
+}
+
+
+.programming li {
+
+    background: rgb(13, 138, 138,0.4);
+
+}
+
+
+.tools h3 {
+
+    color:  rgb(222, 83, 106);
+
+    font-weight: bold;
+
+}
+
+
+.tools li {
+
+    background: rgb(126, 39, 107, 0.4);
+
+}
+
+
+
+.ai-creator h3 {
+
+    color:  gold;
+
+    font-weight: bold;
+
+}
+
+
+.ai-creator li {
+
+    background: rgba(142, 124, 9, 0.4);
+
+}
+
+
 
