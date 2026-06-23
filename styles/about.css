@@ -17,10 +17,13 @@
 }
 
 
+/* main body */
+
+
 body {
 
     color: white;
-    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.419));
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.7));
 
     animation-name: body-pulse;
     animation-duration: 5s;
@@ -560,3 +563,60 @@ nav h3 {
     background-color: rgb(88,88,88,0.6);
 
 }
+
+
+/* what people say */
+
+
+.what-people-say {
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 100px;
+
+}
+
+.what-people-say .people-line {
+
+    text-align: center;
+
+    font-size: 40px;
+    font-family: fantasy;
+
+}
+
+
+.people-card {
+
+    display: flex;
+    gap: 15px;  
+    
+    margin: 0;
+    padding: 0;
+
+    justify-content: space-around;
+
+}
+
+.people-card .card {
+
+    border: 2px solid grey;
+    border-radius: 18px;
+
+    padding: 10px;
+
+    background-color: rgb(70, 75, 71, 0.4);
+
+    width: 350px;
+
+
+}
+
+.card h2 {
+
+    color: rgb(186, 10, 186);
+
+}
+
+
