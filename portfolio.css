@@ -31,7 +31,7 @@
 body {
 
     color: white;
-    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.419));
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.7));
 
     animation-name: body-pulse;
     animation-duration: 5s;
@@ -289,7 +289,9 @@ nav h3 {
 
 .buttons {
 
-    justify-content: space-between;
+    /* justify-content: space-between; */
+
+   padding: 15px;
 
 }
 
@@ -301,8 +303,7 @@ nav h3 {
     font-size: 25px;
     font-weight: bold;
 
-    margin-top: 50px;
-    margin-right: 10px;
+    margin: 50px 20px;
 
     padding: 10px;
 
@@ -311,23 +312,21 @@ nav h3 {
 
     cursor: pointer;
 
+    transition: 0.5s ease-in-out;
+
 }
 
 .project-btn:hover {
 
-    background: linear-gradient(to right, rgb(156, 15, 163), rgb(119, 212, 255), rgb(126, 20, 137));
+    background: linear-gradient(to left, rgb(156, 15, 163), rgb(75, 137, 166));
 
-    transition: 0.5s ease;
     transform: scale(1.1);
-    margin-right: 10px;
-
 
 }
 
 .content-btn {
 
-    /* background-color: gray; */
-    background: linear-gradient(to right, rgb(46, 46, 133), cadetblue 50%);
+    background: linear-gradient(to left, rgb(46, 46, 133), cadetblue 50%);
 
 
     color: white;
@@ -336,30 +335,26 @@ nav h3 {
     font-size: 22px;
     font-weight: bold;
 
-    /* margin-left: -70%; */
-    margin-top: 50px;
-    padding: 10px;
-    margin-right: 10px;
+    margin: 50px 20px;
+    padding: 12px;
 
-    /* margin: 10px; */
 
-    border-radius: 12px;
+    border-radius: 15px;
     border: none;
 
     cursor: pointer;
+
+    transition: 0.5s ease-in-out;
+
 
 }
 
 .content-btn:hover {
 
     color: white;
-    background: linear-gradient(to left, rgb(149, 43, 43), rgb(88, 179, 183) 50%);
+    background: linear-gradient(to right, rgb(149, 43, 43), rgb(30, 119, 163));
 
-    transition: 0.5s ease;
     transform: scale(1.1);
-
-    margin-right: 10px;
-
       
 }
 
@@ -377,8 +372,7 @@ nav h3 {
     font-size: 22px;
     font-weight: bold;
 
-    margin-top: 50px;
-    margin-right: 10px;
+    margin: 50px 20px;
 
     padding: 10px;
 
@@ -387,21 +381,21 @@ nav h3 {
 
     cursor: pointer;
 
+    transition: 0.5s ease-in-out;
+
 }
 
 .contact-btn:hover {
 
     color: white;
-    background: linear-gradient(to right, rgb(88, 88, 187), rgb(130, 55, 130), cadetblue);
+    background: linear-gradient(to right, rgb(88, 88, 187), rgb(130, 55, 130));
 
 
     transition: 0.5s ease;
     transform: scale(1.1);
 
-    margin-right: 10px;
-
-
 }
+
 
 /* ------------- Socials ------------ */
 
@@ -532,7 +526,6 @@ nav h3 {
 
 }
 
-
 .overview h2 {
 
     background: linear-gradient(to right, rgba(168, 138, 8, 0.859), rgb(121, 88, 3));
@@ -546,7 +539,6 @@ nav h3 {
     font-family: Arial, Helvetica, sans-serif;
 
 }
-
 
 
 .whatIdo {
@@ -793,10 +785,19 @@ nav h3 {
 
     cursor: pointer;
 
-}
+    transition: 0.3s ease-in-out;
+
+}  
+
 
 .getInTouch button:hover {
 
-    transform: translate(-5px, 2px) scale(1.1);
-    transition: 0.3s ease;
+    transform: translate(-1px, 2px) ;
+
+}
+
+.getInTouch button:active {
+
+    transform: translate(-5px, 4px) scale(1.1);
+
 }
