@@ -20,8 +20,7 @@
 body {
 
     color: white;
-    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.419));
-
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.7));
 
 }
 
@@ -107,7 +106,6 @@ nav h3 {
 
 }
 
-
 /* coming soon */
 
 .container {
@@ -146,4 +144,3 @@ nav h3 {
     filter: blur(0);
   }
 }
-
